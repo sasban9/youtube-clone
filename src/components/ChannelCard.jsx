@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { demoProfilePicture } from "../utils/constants";
 import { CheckCircle } from "@mui/icons-material";
 
-const ChannelCard = ({ channel, marginTop }) => {
+const ChannelCard = ({ channel, marginTop, background='#ddd' }) => {
   return (
     <Box
       sx={{
         boxShadow: "none",
-        background: '#ddd',
+        background,
         display: 'flex',
         justifyContent: "center",
         alignItems: 'center',
