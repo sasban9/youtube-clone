@@ -25,7 +25,7 @@ const ChannelCard = ({ channel }) => {
             flexDirection: "column",
             justifyContent: "center",
             textAlign: "center",
-            color: "#000",
+            color: "#fc1503",
           }}
         >
           <CardMedia
