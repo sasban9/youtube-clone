@@ -11,12 +11,12 @@ const VideoCard = ({
 }) => {
   // console.log(snippet);
   return (
-    <Card sx={{ width: { md: 320, xs: "100%" } }}>
+    <Card sx={{ width: { xs: "100%", sm: 358, md: 320 } }}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: 358, height: 180 }}
+          sx={{ width: { xs: "100%", sm: "358px", md: "320px" }, height: 180 }}
         ></CardMedia>
       </Link>
       <CardContent sx={{ height: 106, background: "#1e1e1e" }}>
